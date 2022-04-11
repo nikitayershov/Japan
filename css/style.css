@@ -71,6 +71,7 @@ img{
     bottom: 0;
     left: 0;
 }
+
 /* Header styles start */
 
 .header{
@@ -78,6 +79,12 @@ img{
     top: 0;
     left: 0;
     width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 5;
+}
+.header_active{
+    background: #0E1D28;
 }
 .header__wrapper{
     display: flex;
@@ -153,7 +160,6 @@ opacity: .75;
     font-weight: 500;
     font-size: 18px;
     color: #fff;
-
 }
 
 .search-form__field::placeholder{
@@ -179,6 +185,7 @@ opacity: .75;
 
 
 /* Benefits styles start */
+
 .benefits{
     margin-bottom:  131px;
 }
@@ -189,7 +196,6 @@ opacity: .75;
     box-shadow: 0 2px 20px rgba(21, 24, 36, 0.15993);
     position: relative;
 }
-
 .benefits__title{
     width: 100%;
     font-weight: 500;
@@ -202,7 +208,6 @@ opacity: .75;
     transform: translateY(-100%);
     background-color: #fff;
 }
-
 .benefits__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -243,7 +248,6 @@ opacity: .75;
 }
 .benefits__card-more:hover, .benefits__card-more:focus{
     background: url("../img/svg/arrow-right-ico.svg") no-repeat right  center;
-
 }
 
 /* Benefits styles end */
@@ -251,6 +255,7 @@ opacity: .75;
 
 
 /* Places styles start */
+
 .places{
     margin-bottom: 131px;
 }
@@ -375,11 +380,13 @@ opacity: .75;
 .tour__more:hover, .tour__more:focus{
     opacity: .65;
 }
+
 /* Tours styles end  */
 
 
 
 /* Top styles start  */
+
 .top{
     margin-bottom: 86px;
 }
@@ -454,4 +461,70 @@ opacity: .75;
 .top__card-more:hover, .top__card-more:focus, .top__card-more:active{
 background-color: #0059D2FF;
 }
+
 /* Top styles end  */
+
+
+
+/* Videos styles start  */
+
+.videos{
+    width: 100%;
+}
+.videos__wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+.video__item{
+    padding-top: 56.25%;
+}
+.video__element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Videos styles end  */
+
+
+
+/* Footer styles Start  */
+.footer{
+    background: #0E1D28;
+    padding: 118px 0;
+}
+
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer__logo{
+    width: 50%;
+}
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+.footer__menu-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+.footer__menu-link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+    opacity: .75;
+}
+/* Footer styles end  */
